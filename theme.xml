@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-theme name:    Art Book Next
-author:        Anthony Caccese
-contributor:   Szalik
+theme name:    Art Book Ruined
+author:        Mark Hanny
 license:       creative commons CC-BY-NC-SA
 -->
 <theme defaultTransition="instant">
@@ -17,7 +16,7 @@ license:       creative commons CC-BY-NC-SA
 
    <variables>
       <logoFont>./_inc/fonts/Neuropolitical-Regular.ttf</logoFont>
-      <bodyFont>./_inc/fonts/Oxygen-Bold.ttf</bodyFont>
+      <bodyFont>./_inc/fonts/Gogh-ExtraBold.otf</bodyFont>
       <spacerImage>./_inc/images/utility/space.png</spacerImage>
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
       <distributionPath ifSubset="distribution:batocera">~/</distributionPath>
