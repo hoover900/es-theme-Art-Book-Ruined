@@ -1,13 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg id="svg2" enable-background="new 0 0 566.929 104.51" version="1.1" y="0px" x="0px" viewBox="0 0 264 35" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
-  <polygon id="polygon12" points="207.83 25.969 183.182 34.883 207.987 34.883 217.424 29.69" style="fill: rgb(255, 255, 255);" bx:origin="-5.35 -2.913"/>
-  <polygon id="polygon14" points="184.813 0.242 214.093 0.242 253.084 19.954 237.791 19.954 227.043 15.026 220.412 17.715" style="fill: rgb(255, 255, 255);" bx:origin="-2.707 -0.012"/>
-  <polygon id="polygon16" points="239.346 9.273 264 0.363 239.195 0.363 229.763 5.553" style="fill: rgb(255, 255, 255);" bx:origin="-6.711 -0.041"/>
-  <polygon id="polygon18" points="262.372 35 233.088 35 194.097 15.288 209.39 15.288 220.138 20.216 226.768 17.527" style="fill: rgb(255, 255, 255);" bx:origin="-2.843 -0.776"/>
-  <rect id="rect20" height="23.654" width="19.409" y="0.004" style="fill: rgb(255, 255, 255);" bx:origin="-0.001 0"/>
-  <rect id="rect22" height="7.242" width="49.736" y="26.554" style="fill: rgb(255, 255, 255);" bx:origin="0 -3.667"/>
-  <polygon id="polygon24" points="31.539 0.004 54.591 0.004 70.363 13.276 58.963 21.617" style="fill: rgb(255, 255, 255);" bx:origin="-0.813 0"/>
-  <polygon id="polygon26" points="60.657 22.931 60.657 33.794 78.853 33.794 78.853 22.931 114.031 0.004 97.049 0.004 61.871 22.931" style="fill: rgb(255, 255, 255);" bx:origin="-1.137 0"/>
-  <polygon id="polygon28" points="116.461 3.622 135.868 15.691 135.868 33.794 116.461 33.794" style="fill: rgb(255, 255, 255);" bx:origin="-6.002 -0.12"/>
-  <polygon id="polygon30" points="118.886 0.004 168.625 33.794 179.541 33.794 179.541 0 170.079 0 170.079 23.766 134.657 0.004" style="fill: rgb(255, 255, 255);" bx:origin="-1.96 0"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 632 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-2384,-58)">
+        <g id="atarilynx.afdesign" transform="matrix(1,0,0,1,2700,100)">
+            <g transform="matrix(1,0,0,1,-320,-60)">
+                <clipPath id="_clip1">
+                    <rect x="4" y="18.106" width="632" height="83.788"/>
+                </clipPath>
+                <g clip-path="url(#_clip1)">
+                    <g transform="matrix(2.39394,0,0,2.39394,4,18.1061)">
+                        <path id="polygon12" d="M207.83,25.969L183.182,34.883L207.987,34.883L217.424,29.69L207.83,25.969Z" style="fill:white;fill-rule:nonzero;"/>
+                        <path id="polygon14" d="M184.813,0.242L214.093,0.242L253.084,19.954L237.791,19.954L227.043,15.026L220.412,17.715L184.813,0.242Z" style="fill:white;fill-rule:nonzero;"/>
+                        <path id="polygon16" d="M239.346,9.273L264,0.363L239.195,0.363L229.763,5.553L239.346,9.273Z" style="fill:white;fill-rule:nonzero;"/>
+                        <path id="polygon18" d="M262.372,35L233.088,35L194.097,15.288L209.39,15.288L220.138,20.216L226.768,17.527L262.372,35Z" style="fill:white;fill-rule:nonzero;"/>
+                        <rect id="rect20" x="0" y="0.004" width="19.409" height="23.654" style="fill:white;"/>
+                        <rect id="rect22" x="0" y="26.554" width="49.736" height="7.242" style="fill:white;"/>
+                        <path id="polygon24" d="M31.539,0.004L54.591,0.004L70.363,13.276L58.963,21.617L31.539,0.004Z" style="fill:white;fill-rule:nonzero;"/>
+                        <path id="polygon26" d="M60.657,22.931L60.657,33.794L78.853,33.794L78.853,22.931L114.031,0.004L97.049,0.004L61.871,22.931L60.657,22.931Z" style="fill:white;fill-rule:nonzero;"/>
+                        <path id="polygon28" d="M116.461,3.622L135.868,15.691L135.868,33.794L116.461,33.794L116.461,3.622Z" style="fill:white;fill-rule:nonzero;"/>
+                        <path id="polygon30" d="M118.886,0.004L168.625,33.794L179.541,33.794L179.541,0L170.079,0L170.079,23.766L134.657,0.004L118.886,0.004Z" style="fill:white;fill-rule:nonzero;"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
