@@ -139,7 +139,7 @@ license:       creative commons CC-BY-NC-SA
       </image>
 
 		<image name="topArrow" extra="static">
-			<path>./_inc/var/arrow.svg</path>
+			<path>./_inc/images/utility/icons/tinyscreen/arrow.svg</path>
 			<tile>false</tile>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.045</pos>
@@ -153,7 +153,7 @@ license:       creative commons CC-BY-NC-SA
 		</image>
 
 		<image name="bottomArrow" extra="static">
-			<path>./_inc/var/arrow.svg</path>
+			<path>./_inc/images/utility/icons/tinyscreen/arrow.svg</path>
 			<tile>false</tile>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.955</pos>
