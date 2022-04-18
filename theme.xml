@@ -21,8 +21,8 @@ license:       creative commons CC-BY-NC-SA
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
       <distributionPath ifSubset="distribution:batocera">~/</distributionPath>
       <distributionPath ifSubset="distribution:jelos">~/roms/</distributionPath>
-      <distributionPath ifArch="amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v">~/roms/351elec/</distributionPath>
-      <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
+      <distributionPath ifArch="amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v">~/.emulationstation/</distributionPath>
+      <themeCustomizationsPath>${distributionPath}/art-book-ruined/</themeCustomizationsPath>
    </variables>
 
    <!-- Aspect Ratio -->
@@ -92,7 +92,7 @@ license:       creative commons CC-BY-NC-SA
       <carousel name="systemcarousel">
          <origin>0 0</origin>
          <pos>0 0</pos>
-         <type>horizontal</type>
+         <type>vertical</type>
          <color>00000000</color>
          <size>1 1</size>
          <logoSize>0.88 0.88</logoSize>
@@ -137,6 +137,33 @@ license:       creative commons CC-BY-NC-SA
          <size>0 1</size>
          <path>./_inc/images/utility/centered-background-custom-mask.svg</path>
       </image>
+
+		<image name="topArrow" extra="static">
+			<path>./_inc/var/arrow.svg</path>
+			<tile>false</tile>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.045</pos>
+			<size>0 0.025</size>
+			<rotation>180</rotation>
+			<storyboard>
+				<animation property="scale" from="2.8" duration="350" mode="EaseInOut"/>
+				<animation property="y" from="0.025" duration="200" mode="EaseInOut"/>
+			</storyboard>
+			<zIndex>50</zIndex>
+		</image>
+
+		<image name="bottomArrow" extra="static">
+			<path>./_inc/var/arrow.svg</path>
+			<tile>false</tile>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.955</pos>
+			<size>0 0.025</size>
+			 <storyboard>
+				<animation property="scale" from="2.8" duration="350" mode="EaseInOut"/>
+				<animation property="y" from="0.975" duration="200" mode="EaseInOut"/>
+			</storyboard>
+			<zIndex>50</zIndex>
+		</image>
    </view>
 
    <view name="basic,detailed,video">
