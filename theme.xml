@@ -5,154 +5,154 @@ author:        Mark Hanny
 license:       creative commons CC-BY-NC-SA
 -->
 <theme defaultTransition="instant">
-   <formatVersion>7</formatVersion>
+	<formatVersion>7</formatVersion>
 
-   <!-- Distribution -->
-   <subset ifNotArch="amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="distribution" displayName="Distribution">
-      <include name="batocera" displayName="Batocera" />
-      <include name="retrobat" displayName="RetroBat" />
-      <include name="jelos" displayName="JELOS" />
-   </subset>
+	<!-- Distribution -->
+	<subset ifNotArch="amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="distribution" displayName="Distribution">
+		<include name="batocera" displayName="Batocera" />
+		<include name="retrobat" displayName="RetroBat" />
+		<include name="jelos" displayName="JELOS" />
+	</subset>
 
-   <variables>
-      <logoFont>./_inc/fonts/Neuropolitical-Regular.ttf</logoFont>
-      <bodyFont>./_inc/fonts/Gogh-ExtraBold.otf</bodyFont>
-      <spacerImage>./_inc/images/utility/space.png</spacerImage>
-      <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
-      <distributionPath ifSubset="distribution:batocera">~/</distributionPath>
-      <distributionPath ifSubset="distribution:jelos">~/roms/</distributionPath>
-      <distributionPath ifArch="amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v">~/.emulationstation/</distributionPath>
-      <themeCustomizationsPath>${distributionPath}/art-book-ruined/</themeCustomizationsPath>
-   </variables>
+	<variables>
+		<logoFont>./_inc/fonts/Neuropolitical-Regular.ttf</logoFont>
+		<bodyFont>./_inc/fonts/Gogh-ExtraBold.otf</bodyFont>
+		<spacerImage>./_inc/images/utility/space.png</spacerImage>
+		<distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
+		<distributionPath ifSubset="distribution:batocera">~/</distributionPath>
+		<distributionPath ifSubset="distribution:jelos">~/roms/</distributionPath>
+		<distributionPath ifArch="amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v">~/.emulationstation/</distributionPath>
+		<themeCustomizationsPath>${distributionPath}/art-book-ruined/</themeCustomizationsPath>
+	</variables>
 
-   <!-- Aspect Ratio -->
-   <subset name="aspect-ratio" displayName="Aspect Ratio">
-      <include ifArch="rg552,amberelec-rg552" name="5-3" displayName="5:3" />
-      <include ifArch="rg351p,amberelec-rg351p" name="3-2" displayName="3:2" />
-      <include ifArch="rg351mp,rg351v,amberelec-rg351mp,amberelec-rg351v" name="4-3" displayName="4:3" />
-      <include ifNotArch="rg351p,rg351mp,rg351v,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="16-9" displayName="16:9" />
-      <include ifNotArch="rg552,rg351p,rg351mp,rg351v,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="4-3" displayName="4:3" />
-      <include ifNotArch="rg552,rg351p,rg351mp,rg351v,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="3-2" displayName="3:2" />
-      <include ifNotArch="rg552,rg351p,rg351mp,rg351v,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="5-3" displayName="5:3" />
-   </subset>
+	<!-- Aspect Ratio -->
+	<subset name="aspect-ratio" displayName="Aspect Ratio">
+		<include ifArch="rg552,amberelec-rg552" name="5-3" displayName="5:3" />
+		<include ifArch="rg351p,amberelec-rg351p" name="3-2" displayName="3:2" />
+		<include ifArch="rg351mp,rg351v,amberelec-rg351mp,amberelec-rg351v" name="4-3" displayName="4:3" />
+		<include ifNotArch="rg351p,rg351mp,rg351v,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="16-9" displayName="16:9" />
+		<include ifNotArch="rg552,rg351p,rg351mp,rg351v,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="4-3" displayName="4:3" />
+		<include ifNotArch="rg552,rg351p,rg351mp,rg351v,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="3-2" displayName="3:2" />
+		<include ifNotArch="rg552,rg351p,rg351mp,rg351v,amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v" name="5-3" displayName="5:3" />
+	</subset>
 
-   <!-- Background Art Style -->
-   <subset name="background-art-style" displayName="Background Art Style">
-      <include name="centered" displayName="Centered" />
-      <include name="full-screen" displayName="Full Screen" />
-      <include name="no-artwork" displayName="No Artwork" />
-   </subset>
+	<!-- Background Art Style -->
+	<subset name="background-art-style" displayName="Background Art Style">
+		<include name="centered" displayName="Centered" />
+		<include name="full-screen" displayName="Full Screen" />
+		<include name="no-artwork" displayName="No Artwork" />
+	</subset>
 
-   <!-- Background Art Source -->
-   <subset name="background-art-source" displayName="Background Art Source">
-      <include name="default" displayName="Default" />
-      <include name="alternative" displayName="Alternative" />
-      <include name="custom" displayName="Custom" />
-   </subset>
+	<!-- Background Art Source -->
+	<subset name="background-art-source" displayName="Background Art Source">
+		<include name="default" displayName="Default" />
+		<include name="alternative" displayName="Alternative" />
+		<include name="custom" displayName="Custom" />
+	</subset>
 
-   <!-- Logo Source -->
-   <subset name="logo-source" displayName="Logo Source">
-      <include name="default" displayName="Default" />
-      <include name="custom" displayName="Custom" />
-   </subset>
+	<!-- Logo Source -->
+	<subset name="logo-source" displayName="Logo Source">
+		<include name="default" displayName="Default" />
+		<include name="custom" displayName="Custom" />
+	</subset>
 
-   <!-- Gamelist Font Size -->
-   <subset name="gamelist-font-size" displayName="Gamelist Font Size">
-      <include name="large" displayName="Large" />
-      <include name="small" displayName="Small" />
-   </subset>
+	<!-- Gamelist Font Size -->
+	<subset name="gamelist-font-size" displayName="Gamelist Font Size">
+		<include name="large" displayName="Large" />
+		<include name="small" displayName="Small" />
+	</subset>
 
-   <view name="system,basic,detailed,video">
-      <helpsystem name="help">
-         <pos>1 1</pos>
-      </helpsystem>
-      <image name="logo">
-         <path>./_inc/images/systems/logos/${system.theme}.svg</path>
-         <path ifSubset="logo-source:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
-         <path ifSubset="logo-source:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
-      </image>
-      <text name="logoText">
-         <fontPath>${logoFont}</fontPath>
-         <forceUppercase>true</forceUppercase>
-         <lineSpacing>1</lineSpacing>
-         <alignment>center</alignment>
-         <color>ffffff</color>
-      </text>
-   </view>
+	<view name="system,basic,detailed,video">
+		<helpsystem name="help">
+			<pos>1 1</pos>
+		</helpsystem>
+		<image name="logo">
+			<path>./_inc/images/systems/logos/${system.theme}.svg</path>
+			<path ifSubset="logo-source:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
+			<path ifSubset="logo-source:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
+		</image>
+		<text name="logoText">
+			<fontPath>${logoFont}</fontPath>
+			<forceUppercase>true</forceUppercase>
+			<lineSpacing>1</lineSpacing>
+			<alignment>center</alignment>
+			<color>ffffff</color>
+		</text>
+	</view>
 
-   <view name="system">
-      <image name="background" extra="true">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-         <size>1 1</size>
-         <path>${spacerImage}</path>
-         <tile>true</tile>
-         <color>111111</color>
-      </image>
-      <carousel name="systemcarousel">
-         <origin>0 0</origin>
-         <pos>0 -0.035</pos>
-         <type>vertical</type>
-         <color>00000000</color>
-         <size>1 1</size>
-         <logoSize>0.88 0.88</logoSize>
-         <logoScale>1</logoScale>
-         <maxLogoCount>1</maxLogoCount>
-      </carousel>
-      <text name="systemInfo">
-         <pos>1 1</pos>
-      </text>
-      <image ifSubset="background-art-style:centered" name="background-art" extra="true">
-         <origin>0.5 0.5</origin>
-         <pos>0.5 0.5</pos>
-         <size>0 1</size>
-         <color>ffffffcc</color>
-         <path>./_inc/images/systems/default/default-centered-background.png</path>
-         <path>./_inc/images/systems/centered/${system.theme}.png</path>
-         <path ifSubset="background-art-source:alternative">./_inc/images/systems/centered/alt/${system.theme}.png</path>
-         <path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
-         <path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
-      </image>
-      <image ifSubset="background-art-style:full-screen" name="background-art" extra="true">
-         <origin>0.5 0.5</origin>
-         <pos>0.5 0.5</pos>
-         <size>0 1</size>
-         <size ifSubset="aspect-ratio:16-9,background-art-source:default|alternative">1 0</size>
-         <color>ffffffcc</color>
-         <path>./_inc/images/systems/default/default-fullscreen-background.jpg</path>
-         <path ifSubset="aspect-ratio:3-2">./_inc/images/systems/fullscreen/480x320/${system.theme}.jpg</path>
-         <path ifSubset="aspect-ratio:3-2,background-art-source:alternative">./_inc/images/systems/fullscreen/480x320/alt/${system.theme}.jpg</path>
-         <path ifSubset="aspect-ratio:4-3">./_inc/images/systems/fullscreen/640x480/${system.theme}.jpg</path>
-         <path ifSubset="aspect-ratio:4-3,background-art-source:alternative">./_inc/images/systems/fullscreen/640x480/alt/${system.theme}.jpg</path>
-         <path ifSubset="aspect-ratio:5-3">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
-         <path ifSubset="aspect-ratio:5-3,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
-         <path ifSubset="aspect-ratio:16-9">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
-         <path ifSubset="aspect-ratio:16-9,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
-         <path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
-         <path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
-      </image>
-      <image ifSubset="background-art-style:centered" name="background-art-mask" extra="true">
-         <origin>0.5 0</origin>
-         <pos>0.5 0</pos>
-         <size>0 1</size>
-         <path>./_inc/images/utility/centered-background-custom-mask.svg</path>
-      </image>
+	<view name="system">
+		<image name="background" extra="true">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${spacerImage}</path>
+			<tile>true</tile>
+			<color>111111</color>
+		</image>
+		<carousel name="systemcarousel">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<type>vertical</type>
+			<color>00000000</color>
+			<size>1 1</size>
+			<logoSize>0.90 0.90</logoSize>
+			<logoScale>1</logoScale>
+			<maxLogoCount>1</maxLogoCount>
+		</carousel>
+		<text name="systemInfo">
+			<pos>1 1</pos>
+		</text>
+		<image ifSubset="background-art-style:centered" name="background-art" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>0 1</size>
+			<color>ffffffcc</color>
+			<path>./_inc/images/systems/default/default-centered-background.png</path>
+			<path>./_inc/images/systems/centered/${system.theme}.png</path>
+			<path ifSubset="background-art-source:alternative">./_inc/images/systems/centered/alt/${system.theme}.png</path>
+			<path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
+			<path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
+		</image>
+		<image ifSubset="background-art-style:full-screen" name="background-art" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>0 1</size>
+			<size ifSubset="aspect-ratio:16-9,background-art-source:default|alternative">1 0</size>
+			<color>ffffffcc</color>
+			<path>./_inc/images/systems/default/default-fullscreen-background.jpg</path>
+			<path ifSubset="aspect-ratio:3-2">./_inc/images/systems/fullscreen/480x320/${system.theme}.jpg</path>
+			<path ifSubset="aspect-ratio:3-2,background-art-source:alternative">./_inc/images/systems/fullscreen/480x320/alt/${system.theme}.jpg</path>
+			<path ifSubset="aspect-ratio:4-3">./_inc/images/systems/fullscreen/640x480/${system.theme}.jpg</path>
+			<path ifSubset="aspect-ratio:4-3,background-art-source:alternative">./_inc/images/systems/fullscreen/640x480/alt/${system.theme}.jpg</path>
+			<path ifSubset="aspect-ratio:5-3">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
+			<path ifSubset="aspect-ratio:5-3,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
+			<path ifSubset="aspect-ratio:16-9">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
+			<path ifSubset="aspect-ratio:16-9,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
+			<path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
+			<path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
+		</image>
+		<image ifSubset="background-art-style:centered" name="background-art-mask" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.5 0</pos>
+			<size>0 1</size>
+			<path>./_inc/images/utility/centered-background-custom-mask.svg</path>
+		</image>
 
-      <image name="topArrow" extra="static">
-         <path>./_inc/images/utility/icons/tinyscreen/arrow.svg</path>
-         <tile>false</tile>
-         <origin>0.5 0.5</origin>
-         <pos>0.5 0.045</pos>
-         <size>0 0.05</size>
-         <flipY>true</flipY>
-         <opacity>0</opacity>
-         <scale>0</scale>
-         <storyboard>
-            <animation property="scale" from="0" to="1" begin="800" duration="600" repeat="1" mode="easeInOut"/>
-            <animation property="opacity" from="0" to="0.65" begin="800" duration="900" autoReverse="true" repeat="2" mode="easeInOut"/>
-         </storyboard>
-         <zIndex>50</zIndex>
-      </image>
+		<image name="topArrow" extra="static">
+			<path>./_inc/images/utility/icons/tinyscreen/arrow.svg</path>
+			<tile>false</tile>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.045</pos>
+			<size>0 0.05</size>
+			<flipY>true</flipY>
+			<opacity>0</opacity>
+			<scale>0</scale>
+			<storyboard>
+				<animation property="scale" from="0" to="1" begin="800" duration="600" repeat="1" mode="easeInOut"/>
+				<animation property="opacity" from="0" to="0.65" begin="800" duration="900" autoReverse="true" repeat="2" mode="easeInOut"/>
+			</storyboard>
+			<zIndex>50</zIndex>
+		</image>
 
 		<image name="bottomArrow" extra="static">
 			<path>./_inc/images/utility/icons/tinyscreen/arrow.svg</path>
@@ -160,209 +160,209 @@ license:       creative commons CC-BY-NC-SA
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.955</pos>
 			<size>0 0.05</size>
-         <opacity>0</opacity>
-         <scale>0</scale>
-         <storyboard>
-            <animation property="scale" from="0" to="1" begin="800" duration="600" repeat="1" mode="easeInOut"/>
-            <animation property="opacity" from="0" to="0.65" begin="800" duration="900" autoReverse="true" repeat="2" mode="easeInOut"/>
-         </storyboard>
+			<opacity>0</opacity>
+			<scale>0</scale>
+			<storyboard>
+				<animation property="scale" from="0" to="1" begin="800" duration="600" repeat="1" mode="easeInOut"/>
+				<animation property="opacity" from="0" to="0.65" begin="800" duration="900" autoReverse="true" repeat="2" mode="easeInOut"/>
+			</storyboard>
 			<zIndex>50</zIndex>
 		</image>
-   </view>
+	</view>
 
-   <view name="basic,detailed,video">
-      <image name="logo">
-         <origin>0.5 0.5</origin>
-         <zIndex>2</zIndex>
-         <color>aaaaaa</color>
-      </image>
-      <text name="logoText">
-         <origin>0.5 0.5</origin>
-         <color>ffffffcc</color>
-         <zIndex>2</zIndex>
-      </text>
-      <textlist name="gamelist">
-         <origin>0 0</origin>
-         <alignment>left</alignment>
-         <fontPath>${bodyFont}</fontPath>
-         <horizontalMargin>0.008</horizontalMargin>
-         <selectorColor>111111</selectorColor>
-         <selectedColor>ffffff</selectedColor>
-         <primaryColor>444444</primaryColor>
-         <secondaryColor>444444</secondaryColor>
-         <primaryColor ifarch="amberelec-rg351mp">666666</primaryColor>
-         <secondaryColor ifarch="amberelec-rg351mp">666666</secondaryColor>
-         <scrollSound>./_inc/sounds/select.wav</scrollSound>
-         <zIndex>2</zIndex>
-      </textlist>
-      <image name="gamelist-background" extra="true">
-         <origin>0 0</origin>
-         <path>${spacerImage}</path>
-         <tile>true</tile>
-         <color>111111</color>
-         <zIndex>1</zIndex>
-      </image>
-      <image name="gamelist-border" extra="true">
-         <origin>0 0</origin>
-         <path>${spacerImage}</path>
-         <tile>true</tile>
-         <color>000000</color>
-         <zIndex>1</zIndex>
-      </image>
-      <image name="background" extra="true">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-         <size>1 1</size>
-         <path>${spacerImage}</path>
-         <tile>true</tile>
-         <color>000000</color>
-         <zIndex>0</zIndex>
-      </image>
-   </view>
+	<view name="basic,detailed,video">
+		<image name="logo">
+			<origin>0.5 0.5</origin>
+			<zIndex>2</zIndex>
+			<color>aaaaaa</color>
+		</image>
+		<text name="logoText">
+			<origin>0.5 0.5</origin>
+			<color>ffffffcc</color>
+			<zIndex>2</zIndex>
+		</text>
+		<textlist name="gamelist">
+			<origin>0 0</origin>
+			<alignment>left</alignment>
+			<fontPath>${bodyFont}</fontPath>
+			<horizontalMargin>0.008</horizontalMargin>
+			<selectorColor>111111</selectorColor>
+			<selectedColor>ffffff</selectedColor>
+			<primaryColor>444444</primaryColor>
+			<secondaryColor>444444</secondaryColor>
+			<primaryColor ifarch="amberelec-rg351mp">666666</primaryColor>
+			<secondaryColor ifarch="amberelec-rg351mp">666666</secondaryColor>
+			<scrollSound>./_inc/sounds/select.wav</scrollSound>
+			<zIndex>2</zIndex>
+		</textlist>
+		<image name="gamelist-background" extra="true">
+			<origin>0 0</origin>
+			<path>${spacerImage}</path>
+			<tile>true</tile>
+			<color>111111</color>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="gamelist-border" extra="true">
+			<origin>0 0</origin>
+			<path>${spacerImage}</path>
+			<tile>true</tile>
+			<color>000000</color>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="background" extra="true">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${spacerImage}</path>
+			<tile>true</tile>
+			<color>000000</color>
+			<zIndex>0</zIndex>
+		</image>
+	</view>
 
-   <view name="basic">
-      <image name="background-art" extra="true">
-         <origin>0.5 0.5</origin>
-         <pos>0.5 0.5</pos>
-         <size>0 1</size>
-         <size ifSubset="background-art-style:full-screen,aspect-ratio:16-9,background-art-source:default|alternative">1 0</size>
-         <tile>false</tile>
-         <color>ffffffcc</color>
-         <path>./_inc/images/systems/default/default-fullscreen-background.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:3-2">./_inc/images/systems/fullscreen/480x320/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:3-2,background-art-source:alternative">./_inc/images/systems/fullscreen/480x320/alt/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:4-3">./_inc/images/systems/fullscreen/640x480/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:4-3,background-art-source:alternative">./_inc/images/systems/fullscreen/640x480/alt/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:5-3">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:5-3,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:16-9">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,aspect-ratio:16-9,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
-         <path ifSubset="background-art-style:full-screen,background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
-         <zIndex>0</zIndex>
-      </image>
-   </view>
+	<view name="basic">
+		<image name="background-art" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>0 1</size>
+			<size ifSubset="background-art-style:full-screen,aspect-ratio:16-9,background-art-source:default|alternative">1 0</size>
+			<tile>false</tile>
+			<color>ffffffcc</color>
+			<path>./_inc/images/systems/default/default-fullscreen-background.jpg</path>
+			<path ifSubset="background-art-style:full-screen,aspect-ratio:3-2">./_inc/images/systems/fullscreen/480x320/${system.theme}.jpg</path>
+			<path ifSubset="background-art-style:full-screen,aspect-ratio:3-2,background-art-source:alternative">./_inc/images/systems/fullscreen/480x320/alt/${system.theme}.jpg</path>
+			<path ifSubset="background-art-style:full-screen,aspect-ratio:4-3">./_inc/images/systems/fullscreen/640x480/${system.theme}.jpg</path>
+			<path ifSubset="background-art-style:full-screen,aspect-ratio:4-3,background-art-source:alternative">./_inc/images/systems/fullscreen/640x480/alt/${system.theme}.jpg</path>
+			<path ifSubset="background-art-style:full-screen,aspect-ratio:5-3">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
+			<path ifSubset="background-art-style:full-screen,aspect-ratio:5-3,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
+			<path ifSubset="background-art-style:full-screen,aspect-ratio:16-9">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
+			<path ifSubset="background-art-style:full-screen,aspect-ratio:16-9,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
+			<path ifSubset="background-art-style:full-screen,background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
+			<path ifSubset="background-art-style:full-screen,background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
+			<zIndex>0</zIndex>
+		</image>
+	</view>
 
-   <view name="detailed,video">
-      <text name="md_lbl_rating,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_playcount,md_playcount,md_lbl_lastplayed,md_lbl_players,md_players,md_lbl_releasedate,md_lbl_genre,md_genre,md_description,md_name,md_lbl_gametime,md_gametime">
-         <visible>false</visible>
-         <fontPath>${bodyFont}</fontPath>
-         <alignment>left</alignment>
-         <color>ffffff</color>
-      </text>
-      <text name="md_genre,md_lbl_players,md_players">
-         <color>333333</color>
-      </text>
-      <text name="md_description">
-         <color>888888</color>
-      </text>
-      <text name="md_lbl_lastplayed,md_lbl_playcount,md_playcount,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_gametime,md_gametime">
-         <color>444444</color>
-         <color ifArch="amberelec-rg351mp">666666</color>
-      </text>
-      <datetime name="md_releasedate,md_lastplayed">
-         <visible>false</visible>
-         <fontPath>${bodyFont}</fontPath>
-         <color>333333</color>
-         <alignment>left</alignment>
-      </datetime>
-      <rating name="md_rating">
-         <visible>false</visible>
-         <fontPath>${bodyFont}</fontPath>
-         <color>333333</color>
-         <alignment>left</alignment>
-      </rating>
-   </view>
+	<view name="detailed,video">
+		<text name="md_lbl_rating,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_playcount,md_playcount,md_lbl_lastplayed,md_lbl_players,md_players,md_lbl_releasedate,md_lbl_genre,md_genre,md_description,md_name,md_lbl_gametime,md_gametime">
+			<visible>false</visible>
+			<fontPath>${bodyFont}</fontPath>
+			<alignment>left</alignment>
+			<color>ffffff</color>
+		</text>
+		<text name="md_genre,md_lbl_players,md_players">
+			<color>333333</color>
+		</text>
+		<text name="md_description">
+			<color>888888</color>
+		</text>
+		<text name="md_lbl_lastplayed,md_lbl_playcount,md_playcount,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_gametime,md_gametime">
+			<color>444444</color>
+			<color ifArch="amberelec-rg351mp">666666</color>
+		</text>
+		<datetime name="md_releasedate,md_lastplayed">
+			<visible>false</visible>
+			<fontPath>${bodyFont}</fontPath>
+			<color>333333</color>
+			<alignment>left</alignment>
+		</datetime>
+		<rating name="md_rating">
+			<visible>false</visible>
+			<fontPath>${bodyFont}</fontPath>
+			<color>333333</color>
+			<alignment>left</alignment>
+		</rating>
+	</view>
 
-   <view name="video">
-      <video name="md_video">
-         <origin>0.5 0.5</origin>
-         <delay>0.2</delay>
-         <effect>none</effect>
-         <showSnapshotDelay>true</showSnapshotDelay>
-         <showSnapshotNoVideo>true</showSnapshotNoVideo>
-         <snapshotSource>thumbnail</snapshotSource>
-         <snapshotSource>image</snapshotSource>
-         <zIndex>0</zIndex>
-      </video>
-   </view>
+	<view name="video">
+		<video name="md_video">
+			<origin>0.5 0.5</origin>
+			<delay>0.2</delay>
+			<effect>none</effect>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<snapshotSource>thumbnail</snapshotSource>
+			<snapshotSource>image</snapshotSource>
+			<zIndex>0</zIndex>
+		</video>
+	</view>
 
-   <view name="menu">
-      <menuText name="menutitle">
-         <fontPath>${bodyFont}</fontPath>
-         <fontSize>0.034375</fontSize>
-         <color>ffffff</color>
-      </menuText>
-      <menuText name="menufooter">
-         <fontPath>${bodyFont}</fontPath>
-         <fontSize>0.0325</fontSize>
-         <color>666666</color>
-      </menuText>
-      <menuText name="menutext">
-         <fontPath>${bodyFont}</fontPath>
-         <fontSize>0.036</fontSize>
-         <color>444444</color>
-         <color ifarch="amberelec-rg351mp">666666</color>
-         <separatorColor>222222</separatorColor>
-         <selectorColor>555555</selectorColor>
-         <selectedColor>ffffff</selectedColor>
-      </menuText>
-      <menuTextSmall name="menutextsmall">
-         <fontPath>${bodyFont}</fontPath>
-         <fontSize>0.03</fontSize>
-         <color>777777</color>
-      </menuTextSmall>
-      <menuBackground name="menubg">
-         <color>111111</color>
-         <cornerSize>20 20</cornerSize>
-      </menuBackground>
-   </view>
+	<view name="menu">
+		<menuText name="menutitle">
+			<fontPath>${bodyFont}</fontPath>
+			<fontSize>0.034375</fontSize>
+			<color>ffffff</color>
+		</menuText>
+		<menuText name="menufooter">
+			<fontPath>${bodyFont}</fontPath>
+			<fontSize>0.0325</fontSize>
+			<color>666666</color>
+		</menuText>
+		<menuText name="menutext">
+			<fontPath>${bodyFont}</fontPath>
+			<fontSize>0.036</fontSize>
+			<color>444444</color>
+			<color ifarch="amberelec-rg351mp">666666</color>
+			<separatorColor>222222</separatorColor>
+			<selectorColor>555555</selectorColor>
+			<selectedColor>ffffff</selectedColor>
+		</menuText>
+		<menuTextSmall name="menutextsmall">
+			<fontPath>${bodyFont}</fontPath>
+			<fontSize>0.03</fontSize>
+			<color>777777</color>
+		</menuTextSmall>
+		<menuBackground name="menubg">
+			<color>111111</color>
+			<cornerSize>20 20</cornerSize>
+		</menuBackground>
+	</view>
 
-   <view name="screen">
-      <text name="clock">
-         <visible>false</visible>
-      </text>
-      <batteryIndicator name="batteryIndicator">
-         <color>ffffffbb</color>
-         <itemSpacing>0</itemSpacing>
-      </batteryIndicator>
-      <batteryIndicator ifSubset="aspect-ratio:5-3|16-9" name="batteryIndicator">
-         <pos>0.015009380863039 0.025</pos><!-- 8 8 -->
-         <size ifSubset="aspect-ratio:5-3">0.969981238273921 0.046875</size><!-- 1862.36397748592832 54 - sized off of 1920x1152 to make the icon clear -->
-         <size ifSubset="aspect-ratio:16-9">0.969981238273921 0.05</size><!-- 1862.36397748592832 54 - sized off of 1920x1080 to make the icon clear -->
-         <full>./_inc/images/utility/icons/bigscreen/battery-100-vertical.svg</full>
-         <at75>./_inc/images/utility/icons/bigscreen/battery-75-vertical.svg</at75>
-         <at50>./_inc/images/utility/icons/bigscreen/battery-50-vertical.svg</at50>
-         <at25>./_inc/images/utility/icons/bigscreen/battery-25-vertical.svg</at25>
-         <empty>./_inc/images/utility/icons/bigscreen/battery-0-vertical.svg</empty>
-         <incharge>./_inc/images/utility/icons/bigscreen/battery-charging-vertical.svg</incharge>
-         <networkIcon>./_inc/images/utility/icons/bigscreen/wifi-vertical.svg</networkIcon>
-      </batteryIndicator>
-      <batteryIndicator ifSubset="aspect-ratio:3-2|4-3" name="batteryIndicator">
-         <pos ifSubset="aspect-ratio:3-2">0.016666666666667 0.025</pos><!-- 8 8 -->
-         <size ifSubset="aspect-ratio:3-2">0.966666666666667 0.0625</size><!-- 464 20 - sized off of 480x320 to make the icon clear -->
-         <pos ifSubset="aspect-ratio:4-3">0.025 0.033333333333333</pos><!-- 16 16 -->
-         <size ifSubset="aspect-ratio:4-3">0.953125 0.05</size><!-- 610 24 - sized off of 640x480 to make the icon clear -->
-         <full>./_inc/images/utility/icons/tinyscreen/battery-100-vertical.svg</full>
-         <at75>./_inc/images/utility/icons/tinyscreen/battery-75-vertical.svg</at75>
-         <at50>./_inc/images/utility/icons/tinyscreen/battery-50-vertical.svg</at50>
-         <at25>./_inc/images/utility/icons/tinyscreen/battery-25-vertical.svg</at25>
-         <empty>./_inc/images/utility/icons/tinyscreen/battery-0-vertical.svg</empty>
-         <incharge>./_inc/images/utility/icons/tinyscreen/battery-charging-vertical.svg</incharge>
-         <networkIcon>./_inc/images/utility/icons/tinyscreen/wifi-vertical.svg</networkIcon>
-      </batteryIndicator>
-      <controllerActivity name="controllerActivity">
-         <visible>false</visible>
-      </controllerActivity>
-   </view>
+	<view name="screen">
+		<text name="clock">
+			<visible>false</visible>
+		</text>
+		<batteryIndicator name="batteryIndicator">
+			<color>ffffffbb</color>
+			<itemSpacing>0</itemSpacing>
+		</batteryIndicator>
+		<batteryIndicator ifSubset="aspect-ratio:5-3|16-9" name="batteryIndicator">
+			<pos>0.015009380863039 0.025</pos><!-- 8 8 -->
+			<size ifSubset="aspect-ratio:5-3">0.969981238273921 0.046875</size><!-- 1862.36397748592832 54 - sized off of 1920x1152 to make the icon clear -->
+			<size ifSubset="aspect-ratio:16-9">0.969981238273921 0.05</size><!-- 1862.36397748592832 54 - sized off of 1920x1080 to make the icon clear -->
+			<full>./_inc/images/utility/icons/bigscreen/battery-100-vertical.svg</full>
+			<at75>./_inc/images/utility/icons/bigscreen/battery-75-vertical.svg</at75>
+			<at50>./_inc/images/utility/icons/bigscreen/battery-50-vertical.svg</at50>
+			<at25>./_inc/images/utility/icons/bigscreen/battery-25-vertical.svg</at25>
+			<empty>./_inc/images/utility/icons/bigscreen/battery-0-vertical.svg</empty>
+			<incharge>./_inc/images/utility/icons/bigscreen/battery-charging-vertical.svg</incharge>
+			<networkIcon>./_inc/images/utility/icons/bigscreen/wifi-vertical.svg</networkIcon>
+		</batteryIndicator>
+		<batteryIndicator ifSubset="aspect-ratio:3-2|4-3" name="batteryIndicator">
+			<pos ifSubset="aspect-ratio:3-2">0.016666666666667 0.025</pos><!-- 8 8 -->
+			<size ifSubset="aspect-ratio:3-2">0.966666666666667 0.0625</size><!-- 464 20 - sized off of 480x320 to make the icon clear -->
+			<pos ifSubset="aspect-ratio:4-3">0.025 0.033333333333333</pos><!-- 16 16 -->
+			<size ifSubset="aspect-ratio:4-3">0.953125 0.05</size><!-- 610 24 - sized off of 640x480 to make the icon clear -->
+			<full>./_inc/images/utility/icons/tinyscreen/battery-100-vertical.svg</full>
+			<at75>./_inc/images/utility/icons/tinyscreen/battery-75-vertical.svg</at75>
+			<at50>./_inc/images/utility/icons/tinyscreen/battery-50-vertical.svg</at50>
+			<at25>./_inc/images/utility/icons/tinyscreen/battery-25-vertical.svg</at25>
+			<empty>./_inc/images/utility/icons/tinyscreen/battery-0-vertical.svg</empty>
+			<incharge>./_inc/images/utility/icons/tinyscreen/battery-charging-vertical.svg</incharge>
+			<networkIcon>./_inc/images/utility/icons/tinyscreen/wifi-vertical.svg</networkIcon>
+		</batteryIndicator>
+		<controllerActivity name="controllerActivity">
+			<visible>false</visible>
+		</controllerActivity>
+	</view>
 
-   <!-- Aspect Ratio -->
-   <include ifSubset="aspect-ratio:16-9">./_inc/aspect-ratios/16-9/16-9.xml</include>
-   <include ifSubset="aspect-ratio:5-3">./_inc/aspect-ratios/5-3/5-3.xml</include>
-   <include ifSubset="aspect-ratio:3-2">./_inc/aspect-ratios/3-2/3-2.xml</include>
-   <include ifSubset="aspect-ratio:4-3">./_inc/aspect-ratios/4-3/4-3.xml</include>
+	<!-- Aspect Ratio -->
+	<include ifSubset="aspect-ratio:16-9">./_inc/aspect-ratios/16-9/16-9.xml</include>
+	<include ifSubset="aspect-ratio:5-3">./_inc/aspect-ratios/5-3/5-3.xml</include>
+	<include ifSubset="aspect-ratio:3-2">./_inc/aspect-ratios/3-2/3-2.xml</include>
+	<include ifSubset="aspect-ratio:4-3">./_inc/aspect-ratios/4-3/4-3.xml</include>
 
-   <!-- User Customizations -->
-   <include>${themeCustomizationsPath}theme.xml</include>
+	<!-- User Customizations -->
+	<include>${themeCustomizationsPath}theme.xml</include>
 
 </theme>
