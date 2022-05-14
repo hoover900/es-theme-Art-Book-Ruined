@@ -1,0 +1,5 @@
+{
+    "compression_mode": "balanced",
+    "compression_level": 70,
+    "strip_tags": true
+}
