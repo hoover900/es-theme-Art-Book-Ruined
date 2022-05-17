@@ -4,7 +4,7 @@ theme name:    Art Book Ruined
 author:        Mark Hanny
 license:       creative commons CC-BY-NC-SA
 -->
-<theme defaultTransition="instant">
+<theme defaultTransition="slide">
 	<formatVersion>7</formatVersion>
 
 	<!-- Distribution -->
@@ -18,11 +18,10 @@ license:       creative commons CC-BY-NC-SA
 		<logoFont>./_inc/fonts/Neuropolitical-Regular.ttf</logoFont>
 		<bodyFont>./_inc/fonts/Gogh-ExtraBold.otf</bodyFont>
 		<spacerImage>./_inc/images/utility/space.png</spacerImage>
-		<distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
 		<distributionPath ifSubset="distribution:batocera">~/</distributionPath>
+		<distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath>
 		<distributionPath ifSubset="distribution:jelos">~/roms/</distributionPath>
 		<distributionPath ifArch="amberelec-rg552,amberelec-rg351p,amberelec-rg351mp,amberelec-rg351v">~/.emulationstation/</distributionPath>
-		<themeCustomizationsPath>${distributionPath}/art-book-ruined/</themeCustomizationsPath>
 	</variables>
 
 	<!-- Aspect Ratio -->
@@ -38,22 +37,8 @@ license:       creative commons CC-BY-NC-SA
 
 	<!-- Background Art Style -->
 	<subset name="background-art-style" displayName="Background Art Style">
-		<include name="centered" displayName="Centered" />
 		<include name="full-screen" displayName="Full Screen" />
 		<include name="no-artwork" displayName="No Artwork" />
-	</subset>
-
-	<!-- Background Art Source -->
-	<subset name="background-art-source" displayName="Background Art Source">
-		<include name="default" displayName="Default" />
-		<include name="alternative" displayName="Alternative" />
-		<include name="custom" displayName="Custom" />
-	</subset>
-
-	<!-- Logo Source -->
-	<subset name="logo-source" displayName="Logo Source">
-		<include name="default" displayName="Default" />
-		<include name="custom" displayName="Custom" />
 	</subset>
 
 	<!-- Gamelist Font Size -->
@@ -68,8 +53,6 @@ license:       creative commons CC-BY-NC-SA
 		</helpsystem>
 		<image name="logo">
 			<path>./_inc/images/systems/logos/${system.theme}.svg</path>
-			<path ifSubset="logo-source:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
-			<path ifSubset="logo-source:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
 		</image>
 		<text name="logoText">
 			<fontPath>${logoFont}</fontPath>
@@ -102,40 +85,17 @@ license:       creative commons CC-BY-NC-SA
 		<text name="systemInfo">
 			<pos>1 1</pos>
 		</text>
-		<image ifSubset="background-art-style:centered" name="background-art" extra="true">
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<size>0 1</size>
-			<color>ffffffcc</color>
-			<path>./_inc/images/systems/default/default-centered-background.png</path>
-			<path>./_inc/images/systems/centered/${system.theme}.png</path>
-			<path ifSubset="background-art-source:alternative">./_inc/images/systems/centered/alt/${system.theme}.png</path>
-			<path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
-			<path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
-		</image>
 		<image ifSubset="background-art-style:full-screen" name="background-art" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<size>0 1</size>
-			<size ifSubset="aspect-ratio:16-9,background-art-source:default|alternative">1 0</size>
+			<size ifSubset="aspect-ratio:16-9">1 0</size>
 			<color>ffffffcc</color>
-			<path>./_inc/images/systems/default/default-fullscreen-background.jpg</path>
-			<path ifSubset="aspect-ratio:3-2">./_inc/images/systems/fullscreen/480x320/${system.theme}.jpg</path>
-			<path ifSubset="aspect-ratio:3-2,background-art-source:alternative">./_inc/images/systems/fullscreen/480x320/alt/${system.theme}.jpg</path>
-			<path ifSubset="aspect-ratio:4-3">./_inc/images/systems/fullscreen/640x480/${system.theme}.jpg</path>
-			<path ifSubset="aspect-ratio:4-3,background-art-source:alternative">./_inc/images/systems/fullscreen/640x480/alt/${system.theme}.jpg</path>
-			<path ifSubset="aspect-ratio:5-3">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
-			<path ifSubset="aspect-ratio:5-3,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
-			<path ifSubset="aspect-ratio:16-9">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
-			<path ifSubset="aspect-ratio:16-9,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
-			<path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
-			<path ifSubset="background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
-		</image>
-		<image ifSubset="background-art-style:centered" name="background-art-mask" extra="true">
-			<origin>0.5 0</origin>
-			<pos>0.5 0</pos>
-			<size>0 1</size>
-			<path>./_inc/images/utility/centered-background-custom-mask.svg</path>
+			<path>./_inc/images/systems/default-background.jpg</path>
+			<path ifSubset="aspect-ratio:3-2">./_inc/images/systems/480x320/${system.theme}.jpg</path>
+			<path ifSubset="aspect-ratio:4-3">./_inc/images/systems/640x480/${system.theme}.jpg</path>
+			<path ifSubset="aspect-ratio:5-3">./_inc/images/systems/1920x1152/${system.theme}.jpg</path>
+			<path ifSubset="aspect-ratio:16-9">./_inc/images/systems/1920x1152/${system.theme}.jpg</path>
 		</image>
 
 		<image name="topArrow" extra="static">
@@ -149,7 +109,7 @@ license:       creative commons CC-BY-NC-SA
 			<scale>0</scale>
 			<storyboard>
 				<animation property="scale" from="0" to="1" begin="800" duration="600" repeat="1" mode="easeInOut"/>
-				<animation property="opacity" from="0" to="0.65" begin="800" duration="900" autoReverse="true" repeat="2" mode="easeInOut"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="900" autoReverse="true" repeat="2" mode="easeInOut"/>
 			</storyboard>
 			<zIndex>50</zIndex>
 		</image>
@@ -164,7 +124,7 @@ license:       creative commons CC-BY-NC-SA
 			<scale>0</scale>
 			<storyboard>
 				<animation property="scale" from="0" to="1" begin="800" duration="600" repeat="1" mode="easeInOut"/>
-				<animation property="opacity" from="0" to="0.65" begin="800" duration="900" autoReverse="true" repeat="2" mode="easeInOut"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="900" autoReverse="true" repeat="2" mode="easeInOut"/>
 			</storyboard>
 			<zIndex>50</zIndex>
 		</image>
@@ -225,20 +185,14 @@ license:       creative commons CC-BY-NC-SA
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<size>0 1</size>
-			<size ifSubset="background-art-style:full-screen,aspect-ratio:16-9,background-art-source:default|alternative">1 0</size>
+			<size ifSubset="background-art-style:full-screen,aspect-ratio:16-9">1 0</size>
 			<tile>false</tile>
 			<color>ffffffcc</color>
-			<path>./_inc/images/systems/default/default-fullscreen-background.jpg</path>
-			<path ifSubset="background-art-style:full-screen,aspect-ratio:3-2">./_inc/images/systems/fullscreen/480x320/${system.theme}.jpg</path>
-			<path ifSubset="background-art-style:full-screen,aspect-ratio:3-2,background-art-source:alternative">./_inc/images/systems/fullscreen/480x320/alt/${system.theme}.jpg</path>
-			<path ifSubset="background-art-style:full-screen,aspect-ratio:4-3">./_inc/images/systems/fullscreen/640x480/${system.theme}.jpg</path>
-			<path ifSubset="background-art-style:full-screen,aspect-ratio:4-3,background-art-source:alternative">./_inc/images/systems/fullscreen/640x480/alt/${system.theme}.jpg</path>
-			<path ifSubset="background-art-style:full-screen,aspect-ratio:5-3">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
-			<path ifSubset="background-art-style:full-screen,aspect-ratio:5-3,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
-			<path ifSubset="background-art-style:full-screen,aspect-ratio:16-9">./_inc/images/systems/fullscreen/1920x1152/${system.theme}.jpg</path>
-			<path ifSubset="background-art-style:full-screen,aspect-ratio:16-9,background-art-source:alternative">./_inc/images/systems/fullscreen/1920x1152/alt/${system.theme}.jpg</path>
-			<path ifSubset="background-art-style:full-screen,background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.jpg</path>
-			<path ifSubset="background-art-style:full-screen,background-art-source:custom">${themeCustomizationsPath}backgrounds/${system.theme}.png</path>
+			<path>./_inc/images/systems/default-background.jpg</path>
+			<path ifSubset="background-art-style:full-screen,aspect-ratio:3-2">./_inc/images/systems/480x320/${system.theme}.jpg</path>
+			<path ifSubset="background-art-style:full-screen,aspect-ratio:4-3">./_inc/images/systems/640x480/${system.theme}.jpg</path>
+			<path ifSubset="background-art-style:full-screen,aspect-ratio:5-3">./_inc/images/systems/1920x1152/${system.theme}.jpg</path>
+			<path ifSubset="background-art-style:full-screen,aspect-ratio:16-9">./_inc/images/systems/1920x1152/${system.theme}.jpg</path>
 			<zIndex>0</zIndex>
 		</image>
 	</view>
@@ -319,41 +273,40 @@ license:       creative commons CC-BY-NC-SA
 	</view>
 
 	<view name="screen">
+
 		<text name="clock">
 			<visible>false</visible>
 		</text>
+
 		<batteryIndicator name="batteryIndicator">
 			<color>ffffffbb</color>
 			<itemSpacing>0</itemSpacing>
+			<full>./_inc/images/utility/icons/battery-100-vertical.svg</full>
+			<at75>./_inc/images/utility/icons/battery-75-vertical.svg</at75>
+			<at50>./_inc/images/utility/icons/battery-50-vertical.svg</at50>
+			<at25>./_inc/images/utility/icons/battery-25-vertical.svg</at25>
+			<empty>./_inc/images/utility/icons/battery-0-vertical.svg</empty>
+			<incharge>./_inc/images/utility/icons/battery-charging-vertical.svg</incharge>
+			<networkIcon>./_inc/images/utility/icons/wifi-vertical.svg</networkIcon>
 		</batteryIndicator>
 		<batteryIndicator ifSubset="aspect-ratio:5-3|16-9" name="batteryIndicator">
 			<pos>0.015009380863039 0.025</pos><!-- 8 8 -->
 			<size ifSubset="aspect-ratio:5-3">0.969981238273921 0.046875</size><!-- 1862.36397748592832 54 - sized off of 1920x1152 to make the icon clear -->
 			<size ifSubset="aspect-ratio:16-9">0.969981238273921 0.05</size><!-- 1862.36397748592832 54 - sized off of 1920x1080 to make the icon clear -->
-			<full>./_inc/images/utility/icons/bigscreen/battery-100-vertical.svg</full>
-			<at75>./_inc/images/utility/icons/bigscreen/battery-75-vertical.svg</at75>
-			<at50>./_inc/images/utility/icons/bigscreen/battery-50-vertical.svg</at50>
-			<at25>./_inc/images/utility/icons/bigscreen/battery-25-vertical.svg</at25>
-			<empty>./_inc/images/utility/icons/bigscreen/battery-0-vertical.svg</empty>
-			<incharge>./_inc/images/utility/icons/bigscreen/battery-charging-vertical.svg</incharge>
-			<networkIcon>./_inc/images/utility/icons/bigscreen/wifi-vertical.svg</networkIcon>
 		</batteryIndicator>
 		<batteryIndicator ifSubset="aspect-ratio:3-2|4-3" name="batteryIndicator">
 			<pos ifSubset="aspect-ratio:3-2">0.016666666666667 0.025</pos><!-- 8 8 -->
 			<size ifSubset="aspect-ratio:3-2">0.966666666666667 0.0625</size><!-- 464 20 - sized off of 480x320 to make the icon clear -->
+
 			<pos ifSubset="aspect-ratio:4-3">0.025 0.033333333333333</pos><!-- 16 16 -->
 			<size ifSubset="aspect-ratio:4-3">0.953125 0.05</size><!-- 610 24 - sized off of 640x480 to make the icon clear -->
-			<full>./_inc/images/utility/icons/tinyscreen/battery-100-vertical.svg</full>
-			<at75>./_inc/images/utility/icons/tinyscreen/battery-75-vertical.svg</at75>
-			<at50>./_inc/images/utility/icons/tinyscreen/battery-50-vertical.svg</at50>
-			<at25>./_inc/images/utility/icons/tinyscreen/battery-25-vertical.svg</at25>
-			<empty>./_inc/images/utility/icons/tinyscreen/battery-0-vertical.svg</empty>
-			<incharge>./_inc/images/utility/icons/tinyscreen/battery-charging-vertical.svg</incharge>
-			<networkIcon>./_inc/images/utility/icons/tinyscreen/wifi-vertical.svg</networkIcon>
 		</batteryIndicator>
+
+		<!-- TODO: #20 Add toggle for controller activity if not small screen -->
 		<controllerActivity name="controllerActivity">
 			<visible>false</visible>
 		</controllerActivity>
+
 	</view>
 
 	<!-- Aspect Ratio -->
@@ -361,8 +314,4 @@ license:       creative commons CC-BY-NC-SA
 	<include ifSubset="aspect-ratio:5-3">./_inc/aspect-ratios/5-3/5-3.xml</include>
 	<include ifSubset="aspect-ratio:3-2">./_inc/aspect-ratios/3-2/3-2.xml</include>
 	<include ifSubset="aspect-ratio:4-3">./_inc/aspect-ratios/4-3/4-3.xml</include>
-
-	<!-- User Customizations -->
-	<include>${themeCustomizationsPath}theme.xml</include>
-
 </theme>
