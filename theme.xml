@@ -47,6 +47,19 @@ license:       creative commons CC-BY-NC-SA
 		<include name="small" displayName="Small" />
 	</subset>
 
+	<!-- Sega Region-->
+	<!--<subset name="sega-region" displayName="Sega Systems Region">
+		<include name="sega-usa" displayName="USA" />
+		<include name="sega-europe" displayName="Europe" />
+		<include name="sega-japan" displayName="Japan" />
+	</subset>-->
+
+	<!-- PC-Engine Region-->
+	<!--<subset name="pce-region" displayName="PC-Engine Systems Region">
+		<include name="pce-usa" displayName="USA" />
+		<include name="pce-japan" displayName="Japan" />
+	</subset>-->
+
 	<view name="system,basic,detailed,video">
 		<helpsystem name="help">
 			<pos>1 1</pos>
