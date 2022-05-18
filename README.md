@@ -1,7 +1,7 @@
-# Art Book Ruined for AmberELEC & Batocera
+# Art Book Ruined for Batocera & AmberELEC
 
-A minimal theme with direct support for an 4:3 aspect ratio.  
-Built and tested on [AmberELEC](https://AmberELEC.org).  Should also work on [Batocera](https://batocera.org/), [Retrobat](https://github.com/kaylh/RetroBat), [EMUELEC](https://github.com/EmuELEC/EmuELEC) or [JELOS](https://github.com/JustEnoughLinuxOS/distribution)
+A minimal theme with support for an 4:3 aspect ratio.  
+Tested on [Batocera](https://batocera.org/) and [AmberELEC](https://AmberELEC.org).  Should also work with [Retrobat](https://github.com/kaylh/RetroBat), [EMUELEC](https://github.com/EmuELEC/EmuELEC) or [JELOS](https://github.com/JustEnoughLinuxOS/distribution)
 
 ## Preview
 
