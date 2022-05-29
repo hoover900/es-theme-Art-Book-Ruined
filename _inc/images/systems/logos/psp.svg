@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 640 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g>
-        <path d="M189.386,54.452l-185.386,0l-0,59.595l10.997,-0l0,-48.647l185.369,-0l0,-59.447l-196.366,0l0,11.014l185.386,-0l-0,37.485Z" style="fill:#fff;fill-rule:nonzero;"/>
-        <path d="M625.036,54.452l-185.419,0l0,59.595l10.997,-0l0,-48.647l185.386,-0l-0,-59.447l-196.383,0l0,11.014l185.419,-0l-0,37.485Z" style="fill:#fff;fill-rule:nonzero;"/>
-        <path d="M200.366,114.047l111.37,-0l-0,-97.08l99.862,-0l0,-11.014l-111.254,0l-0,97.146l-99.978,0l0,10.948Z" style="fill:#fff;fill-rule:nonzero;"/>
+<svg viewBox="0 0 587 102" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
+    <clipPath id="a">
+        <path d="M.618.499h585.615v101.002H.618z"/>
+    </clipPath>
+    <g clip-path="url(#a)">
+        <path d="M.618.5h182.454v54.107H7.827v46.894H.618V47.394h175.244V7.708H.618V.5m410.373 54.107v46.894h-7.21V47.394h175.241V7.708H403.781V.499h182.453v54.107H410.991M276.102.5v93.791h-93.03v7.21h100.639V7.708h93.031V.499h-100.64" style="fill:#fff;fill-rule:nonzero"/>
     </g>
 </svg>
