@@ -1,27 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 632 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(1,0,0,1,-2384,-58)">
-        <g id="atarilynx.afdesign" transform="matrix(1,0,0,1,2700,100)">
-            <g transform="matrix(1,0,0,1,-320,-60)">
-                <clipPath id="_clip1">
-                    <rect x="4" y="18.106" width="632" height="83.788"/>
-                </clipPath>
-                <g clip-path="url(#_clip1)">
-                    <g transform="matrix(2.39394,0,0,2.39394,4,18.1061)">
-                        <path id="polygon12" d="M207.83,25.969L183.182,34.883L207.987,34.883L217.424,29.69L207.83,25.969Z" style="fill:white;fill-rule:nonzero;"/>
-                        <path id="polygon14" d="M184.813,0.242L214.093,0.242L253.084,19.954L237.791,19.954L227.043,15.026L220.412,17.715L184.813,0.242Z" style="fill:white;fill-rule:nonzero;"/>
-                        <path id="polygon16" d="M239.346,9.273L264,0.363L239.195,0.363L229.763,5.553L239.346,9.273Z" style="fill:white;fill-rule:nonzero;"/>
-                        <path id="polygon18" d="M262.372,35L233.088,35L194.097,15.288L209.39,15.288L220.138,20.216L226.768,17.527L262.372,35Z" style="fill:white;fill-rule:nonzero;"/>
-                        <rect id="rect20" x="0" y="0.004" width="19.409" height="23.654" style="fill:white;"/>
-                        <rect id="rect22" x="0" y="26.554" width="49.736" height="7.242" style="fill:white;"/>
-                        <path id="polygon24" d="M31.539,0.004L54.591,0.004L70.363,13.276L58.963,21.617L31.539,0.004Z" style="fill:white;fill-rule:nonzero;"/>
-                        <path id="polygon26" d="M60.657,22.931L60.657,33.794L78.853,33.794L78.853,22.931L114.031,0.004L97.049,0.004L61.871,22.931L60.657,22.931Z" style="fill:white;fill-rule:nonzero;"/>
-                        <path id="polygon28" d="M116.461,3.622L135.868,15.691L135.868,33.794L116.461,33.794L116.461,3.622Z" style="fill:white;fill-rule:nonzero;"/>
-                        <path id="polygon30" d="M118.886,0.004L168.625,33.794L179.541,33.794L179.541,0L170.079,0L170.079,23.766L134.657,0.004L118.886,0.004Z" style="fill:white;fill-rule:nonzero;"/>
-                    </g>
-                </g>
-            </g>
-        </g>
+<svg viewBox="0 0 633 85" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
+    <clipPath id="a">
+        <path d="M.992.966h632v83.788h-632z"/>
+    </clipPath>
+    <g clip-path="url(#a)">
+        <path d="m498.524 63.134-59.006 21.339H498.9l22.592-12.431-22.968-8.908ZM443.423 1.545h70.094l93.342 47.189h-36.61l-25.73-11.797-15.874 6.437-85.222-41.829Zm130.549 21.62 59.02-21.33H573.61l-22.58 12.424 22.942 8.906Z" style="fill:#fff;fill-rule:nonzero"/>
+        <path d="M629.094 84.754H558.99l-93.342-47.19h36.611l25.73 11.798 15.872-6.438 85.233 41.83Z" style="fill:#fff;fill-rule:nonzero"/>
+        <path style="fill:#fff" d="M.992.975h46.464v56.626H.992zm0 63.559h119.065v17.337H.992z"/>
+        <path d="M76.494.975h55.185l37.757 31.773-27.29 19.967L76.494.975Zm69.707 54.886v26.005h43.56V55.861L273.975.975h-40.654l-84.214 54.886h-2.906ZM279.792 9.636l46.459 28.893v43.337h-46.459V9.636Zm5.806-8.661L404.67 81.866h26.132V.966h-22.651V57.86L323.352.975h-37.754Z" style="fill:#fff;fill-rule:nonzero"/>
     </g>
 </svg>
