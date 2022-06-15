@@ -1,8 +1,18 @@
-<svg viewBox="0 0 587 102" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
-    <clipPath id="a">
-        <path d="M.618.499h585.615v101.002H.618z"/>
-    </clipPath>
-    <g clip-path="url(#a)">
-        <path d="M.618.5h182.454v54.107H7.827v46.894H.618V47.394h175.244V7.708H.618V.5m410.373 54.107v46.894h-7.21V47.394h175.241V7.708H403.781V.499h182.453v54.107H410.991M276.102.5v93.791h-93.03v7.21h100.639V7.708h93.031V.499h-100.64" style="fill:#fff;fill-rule:nonzero"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="632px" height="109px" viewBox="0 0 632 109" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>psp</title>
+    <defs>
+        <polygon id="path-1" points="0 0 632 0 632 109 0 109"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.78">
+        <g id="Sony-Playstation-Portable" transform="translate(-4.000000, -6.000000)">
+            <g id="psp" transform="translate(4.000000, 6.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Path"></g>
+                <path d="M0,0.00107918655 L196.905358,0.00107918655 L196.905358,58.3926259 L7.77999235,58.3926259 L7.77999235,109 L0,109 L0,50.6084533 L189.124286,50.6084533 L189.124286,7.77985584 L0,7.77985584 L0,0.00107918655 M442.876793,58.3926259 L442.876793,109 L435.095721,109 L435.095721,50.6084533 L624.21677,50.6084533 L624.21677,7.77985584 L435.095721,7.77985584 L435.095721,0 L632,0 L632,58.3915467 L442.876793,58.3915467 M297.303844,0 L297.303844,101.219065 L196.905358,101.219065 L196.905358,109 L305.515519,109 L305.515519,7.77985584 L405.915084,7.77985584 L405.915084,0 L297.303844,0" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
     </g>
 </svg>
