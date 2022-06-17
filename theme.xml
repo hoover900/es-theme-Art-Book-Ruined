@@ -202,10 +202,10 @@ license:       creative commons CC-BY-NC-SA
 			<tile>false</tile>
 			<color>ffffffcc</color>
 			<path>./_inc/images/systems/default-background.jpg</path>
-			<path ifSubset="background-art-style:full-screen,aspect-ratio:3-2">./_inc/images/systems/480x320/${system.theme}.jpg</path>
+			<!-- <path ifSubset="background-art-style:full-screen,aspect-ratio:3-2">./_inc/images/systems/480x320/${system.theme}.jpg</path> -->
 			<path ifSubset="background-art-style:full-screen,aspect-ratio:4-3">./_inc/images/systems/640x480/${system.theme}.jpg</path>
-			<path ifSubset="background-art-style:full-screen,aspect-ratio:5-3">./_inc/images/systems/1920x1152/${system.theme}.jpg</path>
-			<path ifSubset="background-art-style:full-screen,aspect-ratio:16-9">./_inc/images/systems/1920x1152/${system.theme}.jpg</path>
+			<!-- <path ifSubset="background-art-style:full-screen,aspect-ratio:5-3">./_inc/images/systems/1920x1152/${system.theme}.jpg</path> -->
+			<path ifSubset="background-art-style:full-screen,aspect-ratio:16-9">./_inc/images/systems/1920x1080/${system.theme}.jpg</path>
 			<zIndex>0</zIndex>
 		</image>
 	</view>
