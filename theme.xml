@@ -310,13 +310,16 @@ license:       creative commons CC-BY-NC-SA
 		<batteryIndicator ifSubset="aspect-ratio:3-2|4-3" name="batteryIndicator">
 			<!--<pos ifSubset="aspect-ratio:3-2">0.016666666666667 0.025</pos> --><!-- 8 8 -->
 			<!--<size ifSubset="aspect-ratio:3-2">0.966666666666667 0.0625</size>--><!-- 464 20 - sized off of 480x320 to make the icon clear -->
-
 			<pos ifSubset="aspect-ratio:4-3">0.025 0.033333333333333</pos><!-- 16 16 -->
 			<size ifSubset="aspect-ratio:4-3">0.953125 0.05</size><!-- 610 24 - sized off of 640x480 to make the icon clear -->
 		</batteryIndicator>
 
 		<!-- TODO: #20 Add toggle for controller activity if not small screen -->
-		<controllerActivity name="controllerActivity">
+		<controllerActivity ifSubset="aspect-ratio:16-9" name="controllerActivity">
+			<visible>true</visible>
+			<pos>0.01 0.012</pos>
+		</controllerActivity>
+		<controllerActivity ifSubset="aspect-ratio:5-3|3-2|4-3" name="controllerActivity">
 			<visible>false</visible>
 		</controllerActivity>
 
@@ -324,7 +327,7 @@ license:       creative commons CC-BY-NC-SA
 
 	<!-- Aspect Ratio -->
 	<include ifSubset="aspect-ratio:16-9">./_inc/aspect-ratios/16-9/16-9.xml</include>
-	<include ifSubset="aspect-ratio:5-3">./_inc/aspect-ratios/5-3/5-3.xml</include>
-	<include ifSubset="aspect-ratio:3-2">./_inc/aspect-ratios/3-2/3-2.xml</include>
+	<!-- <include ifSubset="aspect-ratio:5-3">./_inc/aspect-ratios/5-3/5-3.xml</include> -->
+	<!-- <include ifSubset="aspect-ratio:3-2">./_inc/aspect-ratios/3-2/3-2.xml</include> -->
 	<include ifSubset="aspect-ratio:4-3">./_inc/aspect-ratios/4-3/4-3.xml</include>
 </theme>
